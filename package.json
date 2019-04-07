@@ -1,0 +1,29 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "eat a burger",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Falconetti/Burger.git"
+  },
+  "keywords": [
+    "burger",
+    "bootcamp"
+  ],
+  "author": "Joseph Falconetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Falconetti/Burger/issues"
+  },
+  "homepage": "https://github.com/J-Falconetti/Burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  }
+}
