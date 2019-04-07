@@ -18,9 +18,8 @@ router.get("/", function(req, res) {
     burger.create([
       "name", "devoured"
     ], [
-      req.body.name, req.body.devoured
+      req.body.name, req.body.default
     ], function(result) {
-      // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });
   });
@@ -31,11 +30,13 @@ router.get("/", function(req, res) {
 
     burger.update({
       devoured: req.body.devoured
-    }, condition, function(result) {
+    }, 
+    condition, function(result) {
       if (result.changedRows == 0) {
         // If no rows were changed, then the ID must not exist, so 404
         return res.status(404).end();
-      } else {
+      } 
+      else {
         res.status(200).end();
       }
     });
