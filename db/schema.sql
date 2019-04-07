@@ -1,4 +1,4 @@
--- schema.qul file### Schema
+-- schema.sql  done
 
 DROP DATABASE  burger_db;
 CREATE DATABASE burger_db;

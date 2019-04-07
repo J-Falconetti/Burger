@@ -1,4 +1,4 @@
-// orm.js file
+// orm.js file -- working on
 var connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {

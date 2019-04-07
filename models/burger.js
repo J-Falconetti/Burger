@@ -1,4 +1,4 @@
-// models burger.js filevar orm = require("../config/orm.js");
+// models burger.js done
 
 var orm = require("../config/orm.js");
 

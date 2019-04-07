@@ -1,4 +1,4 @@
-// connection.js file
+// connection.js file -- done
 // Set up MySQL connection.
 var mysql = require("mysql");
 
