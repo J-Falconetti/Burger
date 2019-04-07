@@ -23,6 +23,6 @@ function printQuestionMarks(num) {
     }
    }
    return arr.toString();
-
+   arr.push(key + "=" + value);
 
 module.exports = orm;
