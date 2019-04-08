@@ -1,1 +1,46 @@
 {{!-- index file --}}
+<div class="container">
+<img src="assets/img/burger.jpg" id="pic">
+<h1>Burger Wish List</h1>
+<br>
+<section>
+    <div class="row">
+        <div id="col1" class="col-6">
+            <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                <li style="text-align: left;">
+	            #{{id}} {{burger_name}}
+	            <button class="devour" data-id="{{this.id}}">DEVOUR!</button>
+                </li>
+                {{/unless}}
+            {{/each}}
+            </ul>
+        </div>
+
+         <div id="col2" class="col-6">
+            <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+                <li style="text-align: left;">
+	            #{{id}} {{burger_name}} has been devoured.            
+                {{/if}}
+            {{/each}}
+            </ul>
+        </div>
+</div>
+</section>
+<br>
+</div>
+
+<h2>Add a burger you'd like to eat!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burg" name="name">
+  </div>
+
+
+  <button type="submit">Add Burger</button>
+</form>

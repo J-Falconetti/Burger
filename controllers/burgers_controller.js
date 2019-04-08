@@ -1,17 +1,17 @@
 // burges controller.js 
 var express = require("express");
-
+var burger = require("../models/burger.js");
 var router = express.Router();
 
 // Import the model (cat.js) to use its database functions.
-var burger = require("../models/burger.js");
+
 router.get("/", function(req, res) {
     burger.all(function(data) {
       var hbsObject = {
         burgers: data
       };
       console.log(hbsObject);
-      // res.render("index", hbsObject);
+      res.render("index", hbsObject);
       res.json(data)
     });
   });
