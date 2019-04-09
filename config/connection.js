@@ -30,4 +30,5 @@ connection.connect(function(err) {
 });
 
 // Export connection for our ORM to use.
+// connection.connect();
 module.exports = connection;
