@@ -39,7 +39,7 @@ var orm = {
          throw err;
        }
        cb(result);
-       connection.end()
+       
      });
    },
    create: function(table, cols, vals, cb) {
@@ -60,7 +60,7 @@ var orm = {
        }
  
        cb(result);
-       connection.end()
+       
      });
    },
    // An example of objColVals would be {name: panther, sleepy: true}
@@ -79,7 +79,7 @@ var orm = {
        }
  
        cb(result);
-       connection.end()
+       
      });
    },
 }
