@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
       };
       console.log(hbsObject);
       res.render("index", hbsObject);
-      res.json(data)
+      // res.json(data)
     });
   });
   router.post("/api/burgers", function(req, res) {
