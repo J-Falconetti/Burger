@@ -1,10 +1,11 @@
 {{!-- index file --}}
 <head>
+
     <link rel="stylesheet" type="text/css" href="/assets/css/burger_style.css">
 </head>
  <div class="container">
      <div class="row">
-         <div class="col-md-10">
+         <div class="col-md-12">
     <img src="assets/img/burger.jpg" alt="burger" style="width:250x;height:250px;">
   </div>
     </div>
@@ -14,28 +15,31 @@
         <div class="bod">
    
         <div class="row">
-            <div id="col-md-6">
+            <div class="col-md-2 offset-md-2"></div>
+            <div id="col-md-3">
                 <ul>
                     {{#each burgers}}
                     {{#unless devoured}}
                     <li style="text-align: left;">
-                        #{{id}} {{name}}
+                        {{name}}
                         <button class="devour" data-id="{{this.id}}">DEVOUR!</button>
                     </li>
                     {{/unless}}
                     {{/each}}
                 </ul>
             </div>
-
-            <div id="col-md-6">
+    
+  
+            <div id="col-md-3">
                 <ul>
                     {{#each burgers}}
                     {{#if devoured}}
                     <li style="text-align: left;">
-                        #{{id}} {{name}} has been devoured.
+                        {{name}} has been devoured.
                         {{/if}}
                         {{/each}}
                 </ul>
+            </div>
             </div>
         </div>
 </div>
