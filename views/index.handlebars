@@ -1,10 +1,11 @@
 {{!-- index file --}}
-<div class="container">
-    <img src="assets/img/burger.jpg" id="pic">
+
+    <img src="assets/img/burger.jpg" alt="burger" style="width:250x;height:250px;">>
     <h1>Burger List</h1>
     <br>
+    <div class="container">
         <div class="row">
-            <div id="col1" class="col-6">
+            <div id="col-md-6">
                 <ul>
                     {{#each burgers}}
                     {{#unless devoured}}
@@ -17,7 +18,7 @@
                 </ul>
             </div>
 
-            <div id="col2" class="col-6">
+            <div id="col-md-6">
                 <ul>
                     {{#each burgers}}
                     {{#if devoured}}
