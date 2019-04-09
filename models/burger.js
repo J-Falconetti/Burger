@@ -14,7 +14,7 @@ var burgers = {
         cb(res);
       });
     },
-    update: function(objColVals, condition, cb) {
+    update: function(condition, cb) {
       orm.update("burgers", {devoured:true}, condition, function(res) {
         cb(res);
       });

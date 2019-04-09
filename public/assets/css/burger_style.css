@@ -1,1 +1,10 @@
 /* css file */
+img {
+    text-align: center;
+};   
+body {
+    background: lightgreen;
+    text-align: center;
+};
+
+
