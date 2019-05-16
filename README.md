@@ -15,7 +15,7 @@ please see our heroku Link
 ## https://salty-sierra-48110.herokuapp.com/
 
 ## Contributing
-A file by Joseph Falconettti and the fine Bootcamp suppot staff
+A file by Joseph Falconettti and the fine Bootcamp suppot staff.  Thank you
 
 ## Versioning
 Ver 1.0.0
